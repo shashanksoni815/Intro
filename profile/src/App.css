@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +39,13 @@
 
 .read-the-docs {
   color: #888;
+} */
+
+
+.backGround {
+  /* background-image: url("./assets/image.png"); */
+  background-color: rgb(27, 24, 39);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
