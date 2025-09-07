@@ -4,7 +4,8 @@ const Hero = () => {
   return (
     <>
         <div className=" h-screen flex flex-col items-center justify-center">
-      <h1 className="text-5xl text-white font-bold">Shashank Soni</h1>
+      <h1 className="text-5xl text-white font-bold">I'm Shashank Soni</h1>
+      <h3>Frontend Devloper, Backend Devloper, Mern Devloper</h3>
       <p className='text-3xl text-white font-bold'>Enthusiastic and detail-oriented B-Tech student in Electronics and Communication Engineering with a 
 strong interest in Computer Science and Web Development. Skilled in the MERN stack (MongoDB, 
 Express.js, React, Node.js), problem-solving, and aptitude. Actively seeking opportunities to apply and 
