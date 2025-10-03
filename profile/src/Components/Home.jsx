@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from './Hero'
 import ProjectsSection from './Projects'
 import GetInTouch from './GetInTouch'
+import SkillsSection from './SkillSection'
 
 const HomePage = () => {
   return (
@@ -16,6 +17,7 @@ const HomePage = () => {
         
         <Hero />
         <ProjectsSection />
+        <SkillsSection />
         <GetInTouch/>
         </div>
     </>
