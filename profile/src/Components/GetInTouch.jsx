@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Instagram } from 'lucide-react';
 
 export default function GetInTouch() {
   const contactInfo = [
@@ -26,21 +26,21 @@ export default function GetInTouch() {
     {
       icon: <Github className="w-7 h-7" />,
       label: "GitHub",
-      link: "https://github.com/yourusername",
+      link: "https://github.com/shashanksoni815",
       color: "hover:bg-blue-500/20 hover:text-blue-400"
     },
     {
       icon: <Linkedin className="w-7 h-7" />,
       label: "LinkedIn",
-      link: "https://linkedin.com/in/yourusername",
+      link: "https://www.linkedin.com/in/shashank-soni815/",
       color: "hover:bg-blue-500/20 hover:text-blue-400"
     },
     {
-      icon: <Twitter className="w-7 h-7" />,
-      label: "Twitter",
-      link: "https://twitter.com/yourusername",
-      color: "hover:bg-purple-500/20 hover:text-purple-400"
-    }
+    icon: <Instagram className="w-7 h-7" />,
+    label: "Instagram",
+    link: "https://www.instagram.com/_shashank_sonii/#",
+    color: "hover:bg-pink-500/20 hover:text-pink-400"
+  }
   ];
 
   return (
@@ -116,7 +116,7 @@ export default function GetInTouch() {
           </div>
         </div>
 
-        {/* Optional: Call to Action */}
+        {/* Optional: Call to Action 
         <div className="mt-12 text-center">
           <a
             href="mailto:shashank.soni@example.com"
@@ -125,7 +125,7 @@ export default function GetInTouch() {
             <span className="relative z-10">Send Me a Message</span>
             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400 to-purple-400 opacity-0 group-hover:opacity-20 blur transition-opacity duration-300"></div>
           </a>
-        </div>
+        </div> */}
 
       </div>
     </div>

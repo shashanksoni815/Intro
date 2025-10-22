@@ -5,58 +5,58 @@ export default function ProjectsSection() {
   const projectsData = [
     {
       id: 1,
-      title: "Weather Web Application",
-      description: "Built a responsive weather app using React.js that fetches and displays real-time weather data from a public API. Implemented city-based search functionality with clean, user-friendly interface and error handling for better user experience.",
-      techStack: ["React.js", "REST API", "CSS", "JavaScript"],
-      githubLink: "#",
-      liveLink: "#",
-      icon: "☁️"
+      title: "Dhasu Mart",
+      description: "Built a full-stack e-commerce platform featuring product listing, shopping cart, and user authentication. Integrated MongoDB with Node.js/Express.js backend and implemented secure JWT authentication. Customized UI for improved usability with responsive design.",
+      techStack: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "Tailwind"],
+      githubLink: "https://github.com/shashanksoni815/Dhasu-Mart",
+      liveLink: "https://dhasu-mart-1.onrender.com/",
+      icon: "🛒"
     },
     {
       id: 2,
-      title: "E-Commerce Website",
-      description: "Created a sample e-commerce website with product listing and shopping cart functionality. Developed login/signup routes using React Router for simulated authentication and used LocalStorage to store cart and session data persistently across browser sessions.",
-      techStack: ["React.js", "React Router", "LocalStorage", "CSS"],
-      githubLink: "#",
-      liveLink: "#",
-      icon: "🛒"
+      title: "Medzo",
+      description: "Created MEDZO, a life-saving healthcare platform with 18 RESTful APIs connecting hospitals, doctors, and patients in real-time. Implemented geospatial technology using MongoDB 2dsphere indexing for instant hospital resource discovery and equipment transfer network that can save 3,000+ lives annually. Built with Node.js, Express, React, and deployed interactive API documentation with live endpoint testing capabilities.",
+      techStack: ["React.js", "Node.js", "Express.js", "MongoDB", "AI", "Tailwind", "Finance", "Open APIs"],
+      githubLink: "https://github.com/akshatverma1/Medzo",
+      liveLink: "https://medzo-rho.vercel.app/",
+      icon: "🏥"
     },
-    {
-      id: 3,
-      title: "E-Commerce MERN Application",
-      description: "Built a full-stack e-commerce platform featuring product listing, shopping cart, and user authentication. Integrated MongoDB with Node.js/Express.js backend and implemented secure JWT authentication. Customized UI for improved usability with responsive design.",
-      techStack: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"],
-      githubLink: "#",
-      liveLink: "#",
-      icon: "🏪"
-    },
-    {
-      id: 4,
-      title: "Weather Web Application",
-      description: "Built a responsive weather app using React.js that fetches and displays real-time weather data from a public API. Implemented city-based search functionality with clean, user-friendly interface and error handling for better user experience.",
-      techStack: ["React.js", "REST API", "CSS", "JavaScript"],
-      githubLink: "#",
-      liveLink: "#",
-      icon: "☁️"
-    },
-    {
-      id: 5,
-      title: "E-Commerce Website",
-      description: "Created a sample e-commerce website with product listing and shopping cart functionality. Developed login/signup routes using React Router for simulated authentication and used LocalStorage to store cart and session data persistently across browser sessions.",
-      techStack: ["React.js", "React Router", "LocalStorage", "CSS"],
-      githubLink: "#",
-      liveLink: "#",
-      icon: "🛒"
-    },
-    {
-      id: 6,
-      title: "E-Commerce MERN Application",
-      description: "Built a full-stack e-commerce platform featuring product listing, shopping cart, and user authentication. Integrated MongoDB with Node.js/Express.js backend and implemented secure JWT authentication. Customized UI for improved usability with responsive design.",
-      techStack: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"],
-      githubLink: "#",
-      liveLink: "#",
-      icon: "🏪"
-    }
+    // {
+    //   id: 3,
+    //   title: "E-Commerce MERN Application",
+    //   description: "Built a full-stack e-commerce platform featuring product listing, shopping cart, and user authentication. Integrated MongoDB with Node.js/Express.js backend and implemented secure JWT authentication. Customized UI for improved usability with responsive design.",
+    //   techStack: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"],
+    //   githubLink: "#",
+    //   liveLink: "#",
+    //   icon: "🏪"
+    // },
+    // {
+    //   id: 4,
+    //   title: "Weather Web Application",
+    //   description: "Built a responsive weather app using React.js that fetches and displays real-time weather data from a public API. Implemented city-based search functionality with clean, user-friendly interface and error handling for better user experience.",
+    //   techStack: ["React.js", "REST API", "CSS", "JavaScript"],
+    //   githubLink: "#",
+    //   liveLink: "#",
+    //   icon: "☁️"
+    // },
+    // {
+    //   id: 5,
+    //   title: "E-Commerce Website",
+    //   description: "Created a sample e-commerce website with product listing and shopping cart functionality. Developed login/signup routes using React Router for simulated authentication and used LocalStorage to store cart and session data persistently across browser sessions.",
+    //   techStack: ["React.js", "React Router", "LocalStorage", "CSS"],
+    //   githubLink: "#",
+    //   liveLink: "#",
+    //   icon: "🛒"
+    // },
+    // {
+    //   id: 6,
+    //   title: "E-Commerce MERN Application",
+    //   description: "Built a full-stack e-commerce platform featuring product listing, shopping cart, and user authentication. Integrated MongoDB with Node.js/Express.js backend and implemented secure JWT authentication. Customized UI for improved usability with responsive design.",
+    //   techStack: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"],
+    //   githubLink: "#",
+    //   liveLink: "#",
+    //   icon: "🏪"
+    // }
   ];
 
   return (

@@ -1,21 +1,59 @@
 import { useState, useEffect } from 'react';
 
 export default function HeroSection() {
-  const [text, setText] = useState('');
-  const fullText = 'Frontend Developer';
+  // const [text, setText] = useState('');
+  // const fullText = 'Frontend Developer';
   
-  useEffect(() => {
-    let index = 0;
-    const interval = setInterval(() => {
-      setText(fullText.slice(0, index));
-      index++;
-      if (index > fullText.length) {
-        clearInterval(interval);
-      }
-    }, 100);
+  // useEffect(() => {
+  //   let index = 0;
+  //   const interval = setInterval(() => {
+  //     setText(fullText.slice(0, index));
+  //     index++;
+  //     if (index > fullText.length) {
+  //       clearInterval(interval);
+  //     }
+  //   }, 100);
     
-    return () => clearInterval(interval);
-  }, []);
+  //   return () => clearInterval(interval);
+  // }, []);
+
+  const roles = [
+    "Frontend Developer",
+    "Backend Developer",
+    "MERN Stack Developer",
+    "Full Stack Engineer"
+  ];
+
+  const [text, setText] = useState("");
+  const [roleIndex, setRoleIndex] = useState(0);
+  const [charIndex, setCharIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const currentRole = roles[roleIndex];
+    const typingSpeed = isDeleting ? 50 : 100; // faster when deleting
+
+    const timeout = setTimeout(() => {
+      if (!isDeleting && charIndex < currentRole.length) {
+        // Typing forward
+        setText(currentRole.slice(0, charIndex + 1));
+        setCharIndex(charIndex + 1);
+      } else if (isDeleting && charIndex > 0) {
+        // Deleting backwards
+        setText(currentRole.slice(0, charIndex - 1));
+        setCharIndex(charIndex - 1);
+      } else if (!isDeleting && charIndex === currentRole.length) {
+        // Pause before deleting
+        setTimeout(() => setIsDeleting(true), 1000);
+      } else if (isDeleting && charIndex === 0) {
+        // Move to next role
+        setIsDeleting(false);
+        setRoleIndex((roleIndex + 1) % roles.length);
+      }
+    }, typingSpeed);
+
+    return () => clearTimeout(timeout);
+  }, [charIndex, isDeleting, roleIndex]);
 
   const scrollToSection = (sectionId) => {
   const element = document.getElementById(sectionId);
@@ -47,10 +85,10 @@ export default function HeroSection() {
         
         <div className='max-w-2xl mx-auto mt-6 animate-fade-in-up'>
           <p className='text-base md:text-lg text-gray-300 leading-relaxed'>
-            Aspiring React Developer with hands-on experience in full-stack web development 
-            through multiple real-world projects. Strong foundation in modern development 
-            practices with a passion for building clean, efficient applications. Seeking to 
-            contribute to innovative teams while growing expertise in scalable web solutions.
+            MERN Stack Developer specializing in full-stack web development with practical 
+experience building end-to-end applications. Strong expertise in React.js 
+frontend development and Node.js/Express.js backend systems, integrated with 
+MongoDB databases for scalable solutions.
           </p>
         </div>
         
