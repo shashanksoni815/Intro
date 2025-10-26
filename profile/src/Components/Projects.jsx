@@ -21,15 +21,15 @@ export default function ProjectsSection() {
       liveLink: "https://medzo-rho.vercel.app/",
       icon: "🏥"
     },
-    // {
-    //   id: 3,
-    //   title: "E-Commerce MERN Application",
-    //   description: "Built a full-stack e-commerce platform featuring product listing, shopping cart, and user authentication. Integrated MongoDB with Node.js/Express.js backend and implemented secure JWT authentication. Customized UI for improved usability with responsive design.",
-    //   techStack: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"],
-    //   githubLink: "#",
-    //   liveLink: "#",
-    //   icon: "🏪"
-    // },
+    {
+      id: 3,
+      title: "Dhasu Wallet",
+      description: "Developed full-stack expense tracker with automated group splitting, trip budgeting, and real-time settlements. Built 15+ REST APIs, JWT authentication, multi-currency support, and interactive financial dashboards with automated settlement calculations and expense analytics",
+      techStack: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"],
+      githubLink: "https://github.com/shashanksoni815/Dhasu-Wallet",
+      liveLink: "https://dhasu-wallet.onrender.com/",
+      icon: "💰"
+    },
     // {
     //   id: 4,
     //   title: "Weather Web Application",
